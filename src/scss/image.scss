@@ -1,0 +1,50 @@
+.container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 0;
+
+	.intro {
+		position: absolute;
+		z-index: 1;
+		right: 3%;
+		top: 65%;
+		text-align: center;
+
+		h1 {
+			font-family: 'Noto Serif', serif;
+			font-style: italic;
+			font-weight: 700;
+			margin-bottom: 0;
+			color: black;
+		}
+
+		p:first-of-type {
+			font-family: 'Lato' serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: small;
+			color: black;
+		}
+		
+		p:last-of-type {
+			font-family: 'Lato' serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: small;
+			color: black;
+		}
+
+	}
+
+	.profileImage {
+		background-image: url('../images/portfolio_option2.jpg');
+		background-repeat: no-repeat no-repeat;
+		background-position: center center;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+
+}

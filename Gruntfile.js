@@ -75,6 +75,19 @@ module.exports = function(grunt) {
             filter: 'isFile'
           }
         ]
+      },
+      images: {
+        files: [
+          {
+            expand: true,
+            cwd: 'src/',
+            src: [
+              '**/*.jpg',
+            ],
+            dest: 'public/',
+            filter: 'isFile'
+          }
+        ]
       }
     },
     cssmin: {
@@ -163,15 +176,15 @@ module.exports = function(grunt) {
       },
       jade: {
         files: ['src/**/*.jade'],
-        tasks: ['jade:dev']
+        tasks: ['bower_concat', 'jade:dev']
       },
       sass: {
         files: ['src/**/*.scss'],
-        tasks: ['sass:dev', 'autoprefixer']
+        tasks: ['bower_concat', 'sass:dev', 'autoprefixer']
       },
       js: {
         files: ['src/js/**/*.js'],
-        tasks: ['babel:dev']
+        tasks: ['bower_concat','babel:dev']
       }
     }
   });
