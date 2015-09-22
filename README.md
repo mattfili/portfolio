@@ -1,5 +1,3 @@
-# Fili-family-picture-app
+# Portfolio
 
-Web application using AngularJS and Foundation
-
-Official Fili family hub to upload, share, and comment on albums and pictures
+Personal portfolio site built with AngularJS
