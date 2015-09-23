@@ -1,0 +1,15 @@
+
+<div id="contact">
+  <div class="content-title">
+    <h1>Shoot Me A Note</h1>
+  </div>
+  <div class="content-info">
+    <form> 
+      <label>Email</label>
+      <input placeholder="enter your email" type="text" ng-model="contact.note.email"/>
+      <label>Message</label>
+      <textarea rows="6" columns="50" placeholder="Enter your message here" ng-model="contact.note.note"></textarea>
+      <button type="submit" ng-click="contact.submit(contact.note)">Submit</button>
+    </form>
+  </div>
+</div>
