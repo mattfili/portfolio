@@ -51,7 +51,7 @@ module.exports = function(grunt) {
     connect: {
       main: {
         options: {
-          port: randomPort,
+          port: 8080,
           base: 'public/',
           open: true,
           livereload: true
